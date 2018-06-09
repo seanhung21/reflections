@@ -12,3 +12,12 @@ The staging area is an intermediate space that files don't really exist in as
 the working directory or the repository. However, it provides flexibility to
 operate files between the working directory and the repository by letting us
 choose which files to commit.
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+We can separate files that are related to different logical changes by only
+adding a part of them to the staging area. Since a commit only takes the changes
+of files in the staging area, this make sure each commit contains only one
+logical change.
