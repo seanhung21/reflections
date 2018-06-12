@@ -21,3 +21,39 @@ We can separate files that are related to different logical changes by only
 adding a part of them to the staging area. Since a commit only takes the changes
 of files in the staging area, this make sure each commit contains only one
 logical change.
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+Branching can be helpful when we want to have multiple versions of a project or
+when we want to experiment a new feature. Creating new branches for these
+situations make it possible to try out new ideas but still retain an "official"
+version for a project.
+
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams turn commits into nodes and showing their parents with arrows
+pointing to them. This help understand how a project evolves and how different
+versions are related.
+
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+Merging two branches results in a new commit with two parents, namely the two
+commits they refer to before being merged. The current branch we are on will be
+move to the new commit, while the other one remains at its original commit. The
+way we represent them in the diagram illustrates the important facts that
+merging leads to a new commit and that it has more than one parents.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+Git's automatic merging saves people a lot of time and efforts telling the
+computer what to include and remove in the new commit (pros), but it might
+cause problem if a conflict really exists among the branches merged (cons). On
+the other hand, always doing merges manually avoids such problems (pros) but can
+be extremely time-consuming by asking for obvious decisions (cons).
